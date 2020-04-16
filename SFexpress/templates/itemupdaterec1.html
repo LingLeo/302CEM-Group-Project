@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <form action = "/itemupdaterec2" method = "POST">
+    <h2>Update Query</h2>
+    <body>
+        <table border = 1>
+            <thead>
+                <td></td>
+                <td>Order Key</td>
+                <td>Item Key</td>
+                <td>Item Name</td>
+                <td>Item Type</td>
+                <td>Item Brand</td>
+             </thead>
+			
+            {% for row in result %}
+                <tr>
+                    <td><input type = "radio" value = "{{row[1]}}" name = "In_Item_Key"></td>
+                    <td><input type = "text" name = "Order_Key" id="Order_Key" value="{{row[0]}}" readonly /></td>
+                    <td><input type = "text" name = "Item_Key" id="Item_Key" value="{{row[1]}}" readonly /></td>
+                    <td><input type = "text" name = "Item_Name" id="Item_Name" value="{{row[2]}}" readonly /></td>
+                    <td><input type = "text" name = "Item_Type" id="Item_Type" value="{{row[3]}}" readonly /></td>
+                    <td><input type = "text" name = "Item_Brand" id="Item_Brand" value="{{row[4]}}" readonly /></td>
+                </tr>
+            {% endfor %}
+        </table>
+        <input type = "submit" value = "Edit" name = "submit">
+        <a href = "/">Go back to home page</a>
+    </body>
+</html>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+ 	    <h2>Query Customer Information</h2>
+ 	    <body>
+            {% for row in result %}
+			Customer Key<br>
+			<input type = "text" name = "Customer_Key" id="Customer_Key" value="{{row[0]}}" readonly /></br>
+			
+			Customer Name<br>
+			<input type = "text" name = "Customer_Name" id="Customer_Name" value="{{row[1]}}" readonly /></br>
+
+			Customer Gender<br>
+			<input type = "text" name = "Customer_Gender" id="Customer_Gender" value="{{row[2]}}" readonly /></br>
+			
+			Customer Address<br>
+			<input type = "text" name = "Customer_Address" id="Customer_Address" value="{{row[3]}}" readonly /></br>
+			
+			Customer District<br>
+			<input type = "text" name = "Customer_District" id="Customer_District" value="{{row[4]}}" readonly /></br>
+			
+           {% endfor %}
+            <a href = "/">Go back to home page</a>
+	    </body>
+</html>
+

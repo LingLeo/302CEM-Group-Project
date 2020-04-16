@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <form action = "/itemupdaterec3" method = "POST">
+	    <h2>Update Item Information</h2>
+ 	    <body>
+            {% for row in result %}
+			Order Key<br>
+			<input type = "number" name = "Order_Key" id="Order_Key" value="{{row[0]}}" /></br>
+			
+			Item Key<br>
+			<input type = "text" name = "Item_Key" id="Item_Key" value="{{row[1]}}" readonly /></br>
+
+			Item Name<br>
+			<input type = "text" name = "Item_Name" id="Item_Name" value="{{row[2]}}" /></br>
+			
+			Item Description<br>
+			<input type = "text" name = "Item_Description" id="Item_Description" value="{{row[3]}}" /></br>
+			
+			Item Type<br>
+			<input type = "text" name = "Item_Type" id="Item_Type" value="{{row[4]}}" /></br>
+
+			Item Brand<br>
+			<input type = "text" name = "Item_Brand" id="Item_Brand" value="{{row[5]}}" /></br>
+
+			Item Size<br>
+			<input type = "text" name = "Item_Size" id="Item_Size" value="{{row[6]}}" /></br>
+
+			Item Cost<br>
+			<input type = "text" name = "Item_Cost" id="Item_Cost" value="{{row[7]}}" /></br>
+
+			Item Price<br>
+			<input type = "text" name = "Item_Price" id="Item_Price" value="{{row[8]}}" /></br>
+
+			Item Quantity<br>
+			<input type = "text" name = "Item_Quantity" id="Item_Quantity" value="{{row[9]}}" /></br>
+			
+			<input type = "submit" value = "Update" name = "submit" /></br>
+            {% endfor %}
+
+           <a href = "/">Go back to home page</a>
+	    </body>
+    </form/>
+</html>
+

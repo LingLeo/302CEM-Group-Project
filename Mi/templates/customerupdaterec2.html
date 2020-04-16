@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <form action = "/customerupdaterec3" method = "POST">
+	    <h2>Update Customer Information</h2>
+ 	    <body>
+            {% for row in result %}
+			Customer Key<br>
+			<input type = "number" name = "Customer_Key" id="Customer_Key" value="{{row[0]}}" readonly /></br>
+			
+			Customer Name<br>
+			<input type = "text" name = "Customer_Name" id="Customer_Name" value="{{row[1]}}" /></br>
+
+			Customer Gender<br>
+			<input type = "text" name = "Customer_Gender" id="Customer_Gender" value="{{row[2]}}" /></br>
+			
+			Customer Address<br>
+			<input type = "text" name = "Customer_Address" id="Customer_Address" value="{{row[3]}}" /></br>
+			
+			Customer District<br>
+			<input type = "text" name = "Customer_District" id="Customer_District" value="{{row[4]}}" /></br>
+			
+			<input type = "submit" value = "Update" name = "submit" /></br>
+            {% endfor %}
+
+           <a href = "/">Go back to home page</a>
+	    </body>
+    </form/>
+</html>
+

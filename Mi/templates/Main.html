@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <title>XIaoMi IOS Mi Place</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+    <div id="page">
+        <header>
+            <nav class="navbar navbar-expend-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="Main.html"><img src={{url_for('static', filename='800px-Xiaomi_logo.svg.png')}} alt="Mi" height="50" width="50"></a>
+                <!-- Toggle/collapsible button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--links-->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!--Customer -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Customer</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/customeraddrec0">Add Customer</a>
+                                <a class="dropdown-item" href="/customerqueryrec0">Query Customer</a>
+                                <a class="dropdown-item" href="/customerupdaterec0">Update Customer</a>
+                                <a class="dropdown-item" href="/customerdeleterec0">Delete Customer</a>
+                            </div>
+                        </li>
+                        <!--Order -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Purchase Order</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/orderaddrec0">Add Purchase Order</a>
+                                <a class="dropdown-item" href="/orderqueryrec0">Query Purchase Order</a>
+                                <a class="dropdown-item" href="/orderupdaterec0">Update Purchase Order</a>
+                                <a class="dropdown-item" href="/orderdeleterec0">Delete Purchase Order</a>
+                            </div>
+                        </li>
+                        <!--Product -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Order Item</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/itemaddrec0">Add Order Item</a>
+                                <a class="dropdown-item" href="/itemqueryrec0">Query Order Item</a>
+                                <a class="dropdown-item" href="/itemupdaterec0">Update Order Item</a>
+                                <a class="dropdown-item" href="/itemdeleterec0">Delete Order Item</a>
+                            </div>
+                        </li>
+                        <!--Json convert -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Data Transfer</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/tableexport0">Table Export</a>
+                                <a class="dropdown-item" href="/tableimport0">Table Import</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+		</header>
+		<div id="main">
+			<nav>
+
+			</nav>
+			<div id="content">
+			</div>
+		</div>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Order Put In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <nav class="navbar navbar-expend-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="Main.html"><img src="800px-Xiaomi_logo.svg.png" alt="CGA" height="20" width="50"></a>
+                <!-- Toggle/collapsible button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--links-->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!--Order -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Order</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=-y_Kjj3Hdb4&t=1s">Add Order</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Inquire Order</a>
+                                <a class="dropdown-item" href="about us.html">Alter Order</a>
+                                <a class="dropdown-item" href="index.html">Delete Order</a>
+                            </div>
+                        </li>
+                        <!--Customer -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Customer</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=-y_Kjj3Hdb4&t=1s">Add In Order Owner</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Check Owner</a>
+                                <a class="dropdown-item" href="about us.html">Update Owner Details</a>
+                                <a class="dropdown-item" href="index.html">Delete Owner Details</a>
+                            </div>
+                        </li>
+                        <!--Club_Member -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Member</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=-y_Kjj3Hdb4&t=1s">Add Member</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Inquire Member</a>
+                                <a class="dropdown-item" href="about us.html">Update Member Details</a>
+                                <a class="dropdown-item" href="index.html">Delete Member</a>
+                            </div>
+                        </li>
+                        <!--Product -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=-y_Kjj3Hdb4&t=1s">Add Product</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Check Product Details</a>
+                                <a class="dropdown-item" href="about us.html">Update Product Details</a>
+                                <a class="dropdown-item" href="index.html">Product Take Off</a>
+                            </div>
+                        </li>
+                        <!--Product_Order -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Order's Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=-y_Kjj3Hdb4&t=1s">Add Relationship</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Check Order_Product</a>
+                                <a class="dropdown-item" href="about us.html">Update Order Relationship</a>
+                                <a class="dropdown-item" href="index.html">Delete Relationship</a>
+                            </div>
+                        </li>
+                        <!--Json convert -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Data Transfer</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=-y_Kjj3Hdb4&t=1s">Data Package Creation</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=0LHxvxdRnYc">Check Order Push Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+		</header>
+		<div id="main">
+		    <form action = "/orderaddrec1" method = "POST">
+			<h2>Add Customer Information</h2>
+			Order Key<br>
+			<input type = "text" name = "Order_Key" id="Order_Key" /></br>
+
+			Customer Key<br>
+			<input type = "text" name = "Customer_Key" id="Customer_Key" /></br>
+
+			Order Date<br>
+			<input type = "date" name = "Order_Date" id="Order_Date" /></br>
+
+			Order Count<br>
+			<input type = "text" name = "Order_Count" id="Order_Count" /></br>
+
+			Order Total<br>
+			<input type = "text" name = "Order_Total" id="Order_Total" /></br>
+
+            <input type = "submit" value = "submit" name = "Submit" /></br>
+		    </form/>
+        <a href = "/">Go back to home page</a>
+		</div>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+</html>

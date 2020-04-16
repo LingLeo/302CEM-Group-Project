@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <form action = "/orderdeleterec3" method = "POST">
+	    <h2>Delete Order Information</h2>
+ 	    <body>
+            {% for row in result %}
+			Order Key<br>
+			<input type = "text" name = "Order_Key" id="Order_Key" value="{{row[0]}}" readonly /></br>
+			
+			Customer Key<br>
+			<input type = "text" name = "Customer_Key" id="Customer_Key" value="{{row[1]}}" readonly /></br>
+
+			Order Date<br>
+			<input type = "date" name = "Order_Date" id="Order_Date" value="{{row[2]}}" readonly /></br>
+			
+			Order Count<br>
+			<input type = "text" name = "Order_Count" id="Order_Count" value="{{row[3]}}" readonly /></br>
+			
+			Order Total<br>
+			<input type = "text" name = "Order_Total" id="Order_Total" value="{{row[4]}}" readonly /></br>
+			
+			<input type = "submit" value = "Delete" name = "submit" /></br>
+            {% endfor %}
+            <a href = "/">Go back to home page</a>
+	    </body>
+    </form/>
+</html>
+

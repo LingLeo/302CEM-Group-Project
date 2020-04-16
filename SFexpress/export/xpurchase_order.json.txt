@@ -1,0 +1,1 @@
+[{"Order_Key": "2002", "Customer_Key": "1004", "Order_Date": "2020-01-23", "Order_Count": 2, "Order_Total": 2}, {"Order_Key": "2003", "Customer_Key": "1001", "Order_Date": "2020-04-14", "Order_Count": 4, "Order_Total": 4}]
